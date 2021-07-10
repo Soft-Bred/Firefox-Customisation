@@ -1,0 +1,4 @@
+[data-l10n-id="urlbar-result-action-search-w-engine"]:not(.urlbarView-dynamic-onboardTabToSearch-titleStrong),
+.urlbarView-row[type="search"] .urlbarView-title-separator {
+  display: none;
+}

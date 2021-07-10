@@ -1,0 +1,47 @@
+/* Remove space to left of toolbar  */
+.titlebar-spacer[type="pre-tabs"] {
+    display: none !important;
+  }
+  
+  /* Customize window action buttons ( Close, Min, Max ) */
+  .titlebar-button {
+    margin: 7px !important;
+    margin-left: 0 !important;
+    margin-right: 5px !important;
+    border-radius: 4px !important;
+  }
+  
+  /* Apply dimmed background for inactive tabs */
+  .tabbrowser-tab:hover>.tab-stack>.tab-background:not([selected], [multiselected]) {
+    background-color: color-mix(in srgb, currentColor 12%, transparent);
+  }
+  
+  .tabbrowser-tab>.tab-stack>.tab-background:not([selected], [multiselected]) {
+    background-color: color-mix(in srgb, currentColor 6%, transparent);
+  }
+  
+  /* Make all tabs small except selected one */
+  .tabbrowser-tab[fadein]:not([selected]):not([pinned]) {  
+    max-width: 100px !important;
+    min-width: 100px !important;
+  }
+  
+  /* Make selected tabs to bigger */
+  .tabbrowser-tab[selected][fadein]:not([pinned]) {  
+    max-width: 200px !important;
+    min-width: 200px !important;
+  }
+  
+  /* Hide tab close button */
+  #TabsToolbar .close-icon {
+    display: none !important;
+  }
+  
+  /* Unhide the tab close button on hover when it is the selected tab and not pinned */
+  #TabsToolbar .tabbrowser-tab[selected]:not([pinned]):hover .close-icon {
+    display: inline-block !important;
+  }
+  
+  /* Reduce spacing between pinned and regular tabs */
+  #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: initial !important; }
+  

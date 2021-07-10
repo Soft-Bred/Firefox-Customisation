@@ -1,0 +1,7 @@
+.tabbrowser-tab[label^="New Tab"] .tab-icon-image {
+    background: url("Images/Bred.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: 16px !important;
+    margin-right: 5.5px !important;
+    padding-left: 16px !important;
+}

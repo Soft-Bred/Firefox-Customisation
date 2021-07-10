@@ -1,0 +1,319 @@
+/* Settings - Checkboxes */
+:root {
+    --buttons-primary-button-bgcolor: #C5B3FD !important;
+    --buttons-primary-button-hover-bgcolor: #C5B3FD !important;
+    --buttons-primary-button-active-bgcolor: #C5B3FD !important;
+    --checkbox-checked-bgcolor: #C5B3FD !important;
+    --checkbox-checked-hover-bgcolor: #C5B3FD !important;
+    --checkbox-checked-active-bgcolor: #C5B3FD !important;
+    --lwt-popup-brighttext-url-color: #C5B3FD !important;
+    --focus-outline-color: #C5B3FD !important;
+    
+    /*Star Highlight & Download Finished*/
+    --lwt-toolbarbutton-icon-fill-attention: #C5B3FD !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Settings Links, Settings Dot Buttons */
+@-moz-document regexp("^(about:|chrome:|moz-extension:).*") {
+  html:not([role="dialog"]),
+  html:not([role="dialog"]) *,
+  html:not([role="dialog"]) body.activity-stream,
+  window:not([chromehidden]),
+  window:not([chromehidden]) > dialog
+  {
+    --in-content-primary-button-background: #C5B3FD !important;
+    --in-content-primary-button-background-hover: #C5B3FD !important;
+    --in-content-primary-button-background-active: C5B3FD !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Checkboxes */
+@-moz-document url("chrome://global/content/commonDialog.xhtml"){
+    #commonDialog[subdialog] checkbox {
+      --checkbox-border-color: #8F8F9D !important;
+      --checkbox-checked-bgcolor: #C5B3FD !important;
+      --checkbox-checked-color: #2B2A33 !important;
+      --checkbox-checked-hover-bgcolor: #C5B3FD !important;
+      --checkbox-checked-active-bgcolor: #C5B3FD !important;
+      --checkbox-checked-border-color: #8F8F9D !important;
+      --checkbox-unchecked-bgcolor: #2B2A33 !important;
+      --checkbox-unchecked-hover-bgcolor: #52525E !important;
+      --checkbox-unchecked-active-bgcolor:  #2B2A33 !important;
+  }
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/* Tab Loading Bar */
+.tab-throbber::before {
+  fill: #C5B3FD !important;
+  opacity: 1 !important;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/* Shortcut Menu / Personalise Button Switches */
+@-moz-document regexp("^(about:).*") {
+  html:not([role="dialog"]),
+  html:not([role="dialog"]) *,
+  html:not([role="dialog"]) body.activity-stream,
+  window:not([chromehidden]),
+  window:not([chromehidden]) > dialog {
+      --newtab-primary-action-background: #C5B3FD !important;
+      --newtab-button-primary-color: #C5B3FD !important;
+      --newtab-border-primary-color: #C5B3FD !important;
+      --newtab-link-primary-color: #C5B3FD !important;
+      --in-content-item-selected: #C5B3FD !important;
+      --in-content-border-highlight: #C5B3FD !important;
+      --in-content-border-hover: var(--dialog-box-border-hover) !important;
+      --in-content-border-focus: #C5B3FD !important;
+      --in-content-border-active: #C5B3FD !important;
+
+      /*Shortcut Button Outline When Clicked*/
+      --in-content-border-active-shadow: #C5B3FD !important;
+      --in-content-category-outline-focus: 1px solid transparent  !important;
+       /*Settings Tabs Text, Settings Privacy Boxes*/
+      --in-content-accent-color: #C5B3FD !important;
+      --in-content-table-header-background: rgb(0, 145, 255) !important;
+      --newtab-focus-outline: var(--in-content-border-active-shadow) !important;
+      --newtab-focus-border: var(--in-content-border-focus) !important;
+      --newtab-focus-border-selected: rgb(255, 0, 0) !important;
+      --newtab-textbox-focus-color: var(--in-content-border-focus) !important;
+  }
+}
+
+.topsite-form .form-wrapper input[type="text"]:focus-visible {
+    outline: none !important;
+    border-color: var(--newtab-focus-border) !important;
+}
+
+.showPrivate .search-handoff-button.focused {
+    outline: 0;
+    border: 1px solid var(--newtab-focus-border) !important;
+    box-shadow: 0 0 0 2px var(--newtab-focus-outline) !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Choose An Application To Open ____ Link. Check Boxes */
+@-moz-document url(chrome://global/content/commonDialog.xhtml),
+    url("chrome://mozapps/content/handling/permissionDialog.xhtml"),
+    url("chrome://mozapps/content/handling/appChooser.xhtml")
+{
+    #commonDialogWindow,
+    #commonDialogWindow * {
+        --in-content-link-color: var(--purple-35) !important;
+        --in-content-link-color-hover: var(--purple-30) !important;
+        --in-content-link-color-active: var(--purple-30) !important;
+        --in-content-primary-button-background: #C5B3FD !important;
+        --in-content-primary-button-background-hover: #C5B3FD !important;
+        --in-content-primary-button-background-active: #C5B3FD !important;
+        --in-content-primary-button-text-color: var(--in-content-page-color) !important;
+        --checkbox-border-color: var(--in-content-box-border-color) !important;
+        --checkbox-checked-border-color: transparent !important;
+        --checkbox-unchecked-bgcolor: var(--in-content-button-background) !important;
+        --checkbox-unchecked-hover-bgcolor: var(--in-content-button-background-hover) !important;
+        --checkbox-unchecked-active-bgcolor: var(--in-content-button-background-active) !important;
+        --checkbox-checked-bgcolor: var(--in-content-primary-button-background) !important;
+        --checkbox-checked-color: var(--in-content-primary-button-text-color) !important;
+        --checkbox-checked-hover-bgcolor: var(
+            --in-content-primary-button-background-hover
+        ) !important;
+        --checkbox-checked-active-bgcolor: var(
+            --in-content-primary-button-background-active
+        ) !important;
+    }
+
+    richlistitem > button[label] {
+        background-color: var(--in-content-primary-button-background) !important;
+    }
+
+    richlistitem:not([disabled="true"])
+        > button[label]:is(:enabled, :not([disabled="true"])):hover {
+        background-color: var(--in-content-primary-button-background-hover) !important;
+    }
+
+    richlistitem:not([disabled="true"])
+        > button[label]:is(:enabled, :not([disabled="true"])):hover:active,
+    richlistitem > button[label][open],
+    richlistitem > button[label][open]:hover {
+        background-color: var(--in-content-primary-button-background-active) !important;
+    }
+}
+
+@-moz-document url("chrome://mozapps/content/handling/permissionDialog.xhtml"),
+    url("chrome://mozapps/content/handling/appChooser.xhtml"),
+    url-prefix("chrome://global/content/print.html"),
+    url("chrome://browser/content/places/bookmarkProperties.xhtml"),
+    url("chrome://browser/content/places/bookmarkProperties2.xhtml")
+{
+    :root,
+    window,
+    dialog {
+        --in-content-link-color: var(--purple-35) !important;
+        --in-content-link-color-hover: var(--purple-30) !important;
+        --in-content-link-color-active: var(--purple-30) !important;
+        --in-content-primary-button-background: #C5B3FD !important;
+        --in-content-primary-button-background-hover: #C5B3FD !important;
+        --in-content-primary-button-background-active: #C5B3FD !important;
+        --in-content-primary-button-text-color: var(--in-content-page-color) !important;
+        --checkbox-border-color: var(--in-content-box-border-color) !important;
+        --checkbox-checked-border-color: transparent !important;
+        --checkbox-unchecked-bgcolor: var(--in-content-button-background) !important;
+        --checkbox-unchecked-hover-bgcolor: var(--in-content-button-background-hover) !important;
+        --checkbox-unchecked-active-bgcolor: var(--in-content-button-background-active) !important;
+        --checkbox-checked-bgcolor: var(--in-content-primary-button-background) !important;
+        --checkbox-checked-color: var(--in-content-primary-button-text-color) !important;
+        --checkbox-checked-hover-bgcolor: var(--in-content-primary-button-background-hover) !important;
+        --checkbox-checked-active-bgcolor: var(--in-content-primary-button-background-active) !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Sync Current Items Box */
+.sync-group {
+    border-radius: 4px !important;
+    padding: 16px !important;
+    margin-block: 16px !important;
+    background-color: rgba(197, 179, 253, 0.15) !important;
+    border: 1px solid #c5b3fd !important;
+}
+
+
+
+
+
+
+
+
+
+/* download popup and app picker in dark mode */
+
+  /* add to userChrome.css */
+  /* Tested in Windows 10, Firefox Nightly */
+
+@-moz-document url("chrome://mozapps/content/downloads/unknownContentType.xhtml") {
+    #unknownContentType { 
+		color: white !important;
+		background-color: #2b2a33 !important; 
+	}
+    
+	button {
+
+		-moz-appearance: none !important;
+		
+		background-color: #42414D !important;
+		
+		color: white !important;
+		
+		border: 1px solid #52525E !important;
+		border-radius: 4px !important;
+		
+		}
+		
+		button:hover {
+		
+		background-color: #5f5e6e !important;
+		border: 1px solid dodgerblue !important;	
+		}
+		
+		#openHandler {
+			-moz-appearance: none !important;
+			background: #5f5e6e !important;
+			color: white !important;
+			
+		}
+
+		#openHandlerBox{
+			-moz-appearance: none !important;
+			background: #5f5e6e !important;
+			border: 1px solid black !important;
+			border-radius: 4px !important
+		}
+		
+}
+
+@-moz-document url("chrome://global/content/appPicker.xhtml") {
+
+	#app-picker{
+		color: white !important;
+		background-color: #2b2a33 !important;
+	}
+	
+	button {
+
+		-moz-appearance: none !important;
+		
+		background-color: #42414D !important;
+		
+		color: white !important;
+		
+		border: 1px solid #52525E !important;
+		border-radius: 4px !important;
+		
+		}
+		
+		button:hover {
+		
+		background-color: #5f5e6e !important;
+		border: 1px solid dodgerblue !important;	
+		}
+
+		#app-picker-listbox{
+			-moz-appearance: none !important;
+			background-color: #2b2a33 !important;
+			color: white !important;
+			border: 1px solid #52525E !important;
+		}
+
+}
+
+
+

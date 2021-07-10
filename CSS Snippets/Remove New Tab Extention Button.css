@@ -1,0 +1,13 @@
+:root[titlepreface="NewTab - "] #identity-icon-box,
+:root[titlepreface="NewTab - "] #tracking-protection-icon-container,
+:root[titlepreface="NewTab - "] #page-action-buttons{ display: none }
+:root[titlepreface="NewTab - "] #urlbar-search-button {
+  width: calc(16px + 2 * var(--urlbar-icon-padding));
+  background-image: url(chrome://global/skin/icons/search-glass.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-context-properties: fill, fill-opacity;
+  fill: var(--toolbarbutton-icon-fill);
+  fill-opacity: var(--toolbarbutton-icon-fill-opacity);
+  pointer-events: none;
+}

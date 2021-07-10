@@ -1,0 +1,7 @@
+.protections-popup-tp-switch {
+    background-color: #1C1B22 !important;
+  }    
+  
+  .protections-popup-tp-switch[enabled] {
+    background-color: #C5B3FD !important;
+  }

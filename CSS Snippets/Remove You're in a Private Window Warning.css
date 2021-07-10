@@ -1,0 +1,5 @@
+@-moz-document url('about:privatebrowsing') {
+    .info, .promo {
+        visibility:hidden;
+    }
+    }
